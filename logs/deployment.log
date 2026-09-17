@@ -1,0 +1,30 @@
+Task 2 Deployment Log
+
+AWS Region: ap-south-1
+
+Infrastructure configured:
+- VPC created
+- Public subnet created
+- Internet Gateway attached
+- Public route table created
+- Public subnet associated with route table
+- Security group configured
+- EC2 instance launched
+- SSH connection verified
+- Nginx installed and started
+- Nginx tested using curl
+- S3 bucket configured
+- S3 test object uploaded
+- CloudWatch CPU utilization alarm created
+
+EC2 Web Server:
+Ubuntu + Nginx
+
+S3:
+Object storage with versioning
+
+Monitoring:
+CloudWatch CPUUtilization alarm configured at >70%
+
+Status:
+Task 2 infrastructure configuration completed.

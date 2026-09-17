@@ -1,0 +1,2 @@
+AWS Region: ap-south-1
+Region Name: Asia Pacific (Mumbai)

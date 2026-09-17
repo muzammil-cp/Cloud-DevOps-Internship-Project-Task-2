@@ -1,0 +1,25 @@
+AWS Region: ap-south-1
+Region Name: Asia Pacific (Mumbai)
+
+VPC: cloud-devops-vpc
+CIDR: 10.0.0.0/16
+
+Subnet: public-subnet
+CIDR: 10.0.1.0/24
+
+Internet Gateway: cloud-devops-igw
+Route Table: public-route-table
+Security Group: web-server-sg
+
+EC2: cloud-devops-web-server
+Operating System: Ubuntu
+Web Server: Nginx
+
+Storage: Amazon S3
+S3 Versioning: Enabled
+
+Monitoring: Amazon CloudWatch
+Alarm: EC2 CPUUtilization > 70%
+
+IAM: DevOpsAdmin
+MFA: Enabled
