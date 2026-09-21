@@ -2,48 +2,44 @@
 
 ## Objective
 
-Deploy an Ubuntu EC2 instance inside the AWS VPC.
-
-## Requirements
-
-- Amazon EC2
-- Ubuntu Server AMI
-- VPC
-- Public subnet
-- Security Group
-- EC2 key pair
+Deploy and verify an Ubuntu EC2 instance inside the Task 2 VPC.
 
 ## Configuration
 
-Instance name:
+```text
+Instance name: cloud-devops-web-server
+Operating system: Ubuntu Server 26.04
+Instance type: t3.micro
+VPC: cloud-devops-vpc
+Subnet: public-subnet
+Security Group: web-server-sg
+Key pair: cloud-devops-key
+```
 
-`cloud-devops-web-server`
+The launch configuration screenshot shows the instance using the public subnet and `web-server-sg`.
 
-Operating System:
+## SSH
 
-Ubuntu Server
+The instance was accessed using SSH. Use the private key file that corresponds to the `cloud-devops-key` key pair; do not commit that private key to GitHub.
 
-VPC:
-
-`cloud-devops-vpc`
-
-Subnet:
-
-`public-subnet`
-
-Security Group:
-
-`web-server-sg`
-
-Key Pair:
-
-`cloud-devops-key`
-
-The EC2 instance was configured with a public IPv4 address for remote administration and web access.
-
-## Commands
-
-Connect to the server:
+Example:
 
 ```bash
-ssh -i ~/.ssh/cloud-devops-key.pem ubuntu@YOUR_EC2_PUBLIC_IP
+Use the `cloud-devops-key` private key with the EC2 instance's current public IPv4 address.
+```
+
+## Verification
+
+Useful commands on the Ubuntu server:
+
+```bash
+hostname
+uname -a
+ip addr
+```
+
+## Evidence
+
+- `screenshots/09.1_ec2_launch_configuration.png`
+- `screenshots/09.2_ec2_instance_configuration.png`
+- `screenshots/10.1_ssh_connection.png`

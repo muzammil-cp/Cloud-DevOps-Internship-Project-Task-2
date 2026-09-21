@@ -1,26 +1,37 @@
 # 05 — Nginx Web Traffic Flow
 
 ## Objective
-Show how web traffic reaches the Nginx server running on EC2.
 
-## Configuration
-- HTTP: port `80`
-- HTTPS: port `443` where configured
-- Nginx running on Ubuntu EC2
-- SSH restricted to the administrator IP
+Document the path from Internet traffic to the Nginx web server.
 
-## Verification
-
-```bash
-sudo systemctl status nginx
-curl http://localhost
-```
-
-Then open:
+## Flow
 
 ```text
-http://YOUR_EC2_PUBLIC_IP
+Internet
+   |
+Internet Gateway
+   |
+Public Subnet
+   |
+Security Group
+   |
+EC2
+   |
+Nginx
 ```
 
+## HTTP Verification
+
+```text
+the EC2 instance's current public IPv4 address
+```
+
+The actual public IP is intentionally not stored in the repository.
+
+## Evidence
+
+Nginx was verified using the browser and the EC2 instance.
+
 ## Image
+
 `05_nginx_web_traffic_flow.png`

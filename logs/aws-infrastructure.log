@@ -4,22 +4,37 @@ Region Name: Asia Pacific (Mumbai)
 VPC: cloud-devops-vpc
 CIDR: 10.0.0.0/16
 
-Subnet: public-subnet
+Public Subnet: public-subnet
 CIDR: 10.0.1.0/24
 
+Private Subnet: private-subnet
+CIDR: 10.0.2.0/24
+Availability Zone: ap-south-1a
+Route Table: private-route-table
+
 Internet Gateway: cloud-devops-igw
-Route Table: public-route-table
+Public Route Table: public-route-table
 Security Group: web-server-sg
 
 EC2: cloud-devops-web-server
 Operating System: Ubuntu
+Instance Type: t3.micro
 Web Server: Nginx
+Key Pair: cloud-devops-key
 
 Storage: Amazon S3
+Bucket: muzammil-cloud-devops-task2-2026
 S3 Versioning: Enabled
 
 Monitoring: Amazon CloudWatch
-Alarm: EC2 CPUUtilization > 70%
+Alarm: ec2-CPU-High-70
+Condition: EC2 CPUUtilization > 70%
 
-IAM: DevOpsAdmin
-MFA: Enabled
+IAM Users:
+- DevOpsAdmin
+- CloudIntern
+
+IAM Group: DevOpsAdmins
+Lab Policy: AdministratorAccess
+MFA: Enabled for IAM users
+Root MFA: Enabled

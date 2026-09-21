@@ -4,28 +4,46 @@
 
 Secure the AWS account before performing the Task 2 cloud infrastructure deployment.
 
-## Requirements
-
-- AWS account
-- Root account access
-- Multi-Factor Authentication (MFA)
-- IAM user
-- Secure password
-- AWS region selected for deployment
-
 ## Configuration
 
-The AWS root account was secured using MFA.
+The account security implementation includes:
 
-An IAM administrative user was created for normal AWS management activities.
+- Root account MFA
+- IAM users for laboratory administration
+- IAM group-based permissions
+- MFA for IAM users
+- No AWS credentials stored in the repository
 
-The root account is not intended for regular infrastructure administration.
+### IAM Users
 
-## Commands
+```text
+DevOpsAdmin
+CloudIntern
+```
+
+### IAM Group
+
+```text
+DevOpsAdmins
+```
+
+The internship laboratory group uses `AdministratorAccess` as specified by the task instructions.
+
+## Verification
 
 AWS account security configuration is primarily performed through the AWS Management Console.
 
-Useful verification command:
+Useful identity verification command:
 
 ```bash
 aws sts get-caller-identity
+```
+
+## Evidence
+
+- Root MFA dashboard
+- Root MFA security credentials
+- IAM users
+- CloudIntern MFA assignment
+
+Do not store passwords, access keys, secret keys, MFA secrets, or private SSH keys in the repository.

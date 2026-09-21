@@ -4,19 +4,11 @@
 
 Configure network access rules for the EC2 web server.
 
-## Requirements
-
-- Amazon EC2
-- Security Group
-- SSH
-- HTTP
-- HTTPS
-
 ## Configuration
 
-Security Group name:
-
-`web-server-sg`
+```text
+Security Group: web-server-sg
+```
 
 ### Inbound Rules
 
@@ -26,11 +18,20 @@ Security Group name:
 | HTTP | 80 | 0.0.0.0/0 | Web access |
 | HTTPS | 443 | 0.0.0.0/0 | Secure web access |
 
-SSH access is restricted to the administrator's IP address rather than being open to the entire Internet.
+SSH access should be restricted to the administrator's IP rather than being open to the entire Internet.
 
-## Commands
-
-Verify security groups:
+## Verification
 
 ```bash
 aws ec2 describe-security-groups
+```
+
+On Ubuntu:
+
+```bash
+sudo ss -tulnp
+```
+
+## Evidence
+
+- `screenshots/08.1_security_group.png`

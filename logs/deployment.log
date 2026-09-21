@@ -2,29 +2,44 @@ Task 2 Deployment Log
 
 AWS Region: ap-south-1
 
-Infrastructure configured:
-- VPC created
-- Public subnet created
+Identity and Security:
+- Root MFA verified
+- DevOpsAdmin IAM user configured
+- CloudIntern IAM user created
+- DevOpsAdmins group used for lab permissions
+- CloudIntern MFA device assigned
+- IAM Roles verified; EC2-S3-Access role evidenced
+
+Networking:
+- VPC created: cloud-devops-vpc
+- Public subnet created: 10.0.1.0/24
+- Private subnet created: 10.0.2.0/24
 - Internet Gateway attached
-- Public route table created
-- Public subnet associated with route table
+- Public route table configured
+- Private route table associated with private subnet
 - Security group configured
-- EC2 instance launched
+
+Compute:
+- Ubuntu EC2 instance launched
 - SSH connection verified
 - Nginx installed and started
-- Nginx tested using curl
-- S3 bucket configured
+- Nginx tested using curl/browser
+
+Storage:
+- S3 bucket configured: muzammil-cloud-devops-task2-2026
+- S3 versioning enabled
 - S3 test object uploaded
-- CloudWatch CPU utilization alarm created
-
-EC2 Web Server:
-Ubuntu + Nginx
-
-S3:
-Object storage with versioning
 
 Monitoring:
-CloudWatch CPUUtilization alarm configured at >70%
+- CloudWatch dashboard configured
+- EC2 CPU utilization alarm created
+- Alarm threshold: >70%
+
+Documentation:
+- Architecture diagrams created
+- Pricing Calculator estimate documented
+- Infrastructure report maintained
+- Screenshot evidence indexed
 
 Status:
-Task 2 infrastructure configuration completed.
+Task 2 infrastructure evidence updated.
