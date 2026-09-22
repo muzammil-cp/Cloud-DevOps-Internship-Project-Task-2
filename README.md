@@ -50,7 +50,7 @@ The Task 2 IAM setup includes:
 - Root account MFA
 - IAM role evidence: `EC2-S3-Access`
 
-The IAM Roles page is documented in `docs/iam-configuration.md` and evidenced by `screenshots/03.3_iam_roles.png`.
+The IAM creation and roles evidence is documented in `docs/iam-configuration.md`, including the CloudIntern create-user workflow (`03.4`–`03.7`) and the `EC2-S3-Access` role (`03.3`).
 
 ---
 

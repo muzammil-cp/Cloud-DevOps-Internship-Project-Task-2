@@ -63,7 +63,7 @@ MFA:
   IAM users: configured
 ```
 
-The latest CloudIntern evidence confirms an MFA device was assigned.
+The latest CloudIntern evidence confirms an MFA device was assigned. Additional screenshots document the CloudIntern create-user details, permissions/review flow, and successful creation with both IAM users visible.
 
 IAM role evidence is included in `screenshots/03.3_iam_roles.png`. The IAM Roles page shows `EC2-S3-Access` with EC2 as the trusted service.
 

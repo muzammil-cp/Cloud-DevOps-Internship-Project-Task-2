@@ -21,6 +21,7 @@ For the laboratory instructions, the named users are `DevOpsAdmin` and `CloudInt
 
 Configured users:
 
+
 - `DevOpsAdmin`
 - `CloudIntern`
 
@@ -29,6 +30,18 @@ Both users are associated with:
 ```text
 DevOpsAdmins
 ```
+
+
+### CloudIntern Creation Evidence
+
+Additional screenshots were added to explicitly document the CloudIntern creation workflow:
+
+- `screenshots/03.4_cloudintern_create_user_details.png` — Create User step showing the `CloudIntern` username.
+- `screenshots/03.5_cloudintern_permissions_group.png` — Set Permissions step showing the `DevOpsAdmins` group and its `AdministratorAccess` policy.
+- `screenshots/03.6_cloudintern_review_and_create.png` — Review step showing `CloudIntern` and the `DevOpsAdmins` permissions group.
+- `screenshots/03.7_cloudintern_created_successfully_and_users.png` — Successful creation confirmation and IAM users list showing both `CloudIntern` and `DevOpsAdmin`.
+
+These screenshots provide explicit creation evidence in addition to the existing CloudIntern MFA evidence.
 
 ## IAM Group
 

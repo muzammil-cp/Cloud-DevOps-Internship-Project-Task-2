@@ -15,33 +15,37 @@ This document maps the Task 2 implementation activities to screenshots, document
 | 1 | Root account MFA dashboard | `01.1_root_mfa_dashboard.png` | `docs/aws-account-security.md` |
 | 2 | Root account MFA security credentials | `01.2_root_security_credentials_mfa.png` | `docs/aws-account-security.md` |
 | 3 | IAM user creation, group and AdministratorAccess | `02.1_iam_create_user.png` | `docs/iam-configuration.md` |
-| 4 | IAM users evidence | `02.2_iam_users.png` | `docs/iam-configuration.md` |
-| 5 | CloudIntern MFA assignment | `03.2_cloudintern_mfa.png` | `docs/iam-configuration.md` |
-| 6 | IAM Roles | `03.3_iam_roles.png` | `docs/iam-configuration.md` |
-| 7 | Existing IAM user MFA evidence | `03.1_iam_user_mfa.png` | `docs/iam-configuration.md` |
-| 8 | VPC | `04.1_vpc.png` | `docs/vpc-networking.md` |
-| 9 | Public subnet | `05.1_public_subnet.png` | `docs/vpc-networking.md` |
-| 10 | Private subnet | `05.2_private_subnet.png` | `docs/vpc-networking.md` |
-| 11 | Private subnet route table | `05.2_private_subnet_route_table.png` | `docs/vpc-networking.md` |
-| 12 | Internet Gateway | `06.1_internet_gateway.png` | `docs/vpc-networking.md` |
-| 13 | Public route table | `07.1_route_table.png` | `docs/vpc-networking.md` |
-| 14 | Security Group | `08.1_security_group.png` | `docs/security-groups.md` |
-| 15 | EC2 launch configuration | `09.1_ec2_launch_configuration.png` | `docs/ec2-deployment.md` |
-| 16 | EC2 instance configuration | `09.2_ec2_instance_configuration.png` | `docs/ec2-deployment.md` |
-| 17 | SSH connection | `10.1_ssh_connection.png` | `docs/ec2-deployment.md` |
-| 18 | Nginx default page | `11.1_nginx_default_page.png` | `docs/nginx-deployment.md` |
-| 19 | Nginx browser verification | `12.1_nginx_browser.png` | `docs/nginx-deployment.md` |
-| 20 | Custom Nginx webpage | `13.1_custom_nginx_page.png` | `docs/nginx-deployment.md` |
-| 21 | S3 bucket and versioning | `14.1_s3_bucket_and_versioning.png` | `docs/s3-storage.md` |
-| 22 | S3 object upload | `16.1_s3_object_upload.png` | `docs/s3-storage.md` |
-| 23 | S3 uploaded object | `16.2_s3_object_uploaded.png` | `docs/s3-storage.md` |
-| 24 | CloudWatch dashboard | `17.1_cloudwatch_dashboard.png` | `docs/cloudwatch-monitoring.md` |
-| 25 | CloudWatch alarm configuration | `18.1_cloudwatch_alarm_configuration.png` | `docs/cloudwatch-monitoring.md` |
-| 26 | CloudWatch alarm created | `18.2_cloudwatch_alarm_created.png` | `docs/cloudwatch-monitoring.md` |
-| 27 | AWS Architecture Diagram | `19.1_aws_architecture_diagram.png` | `diagrams/01_aws_cloud_architecture.md` |
-| 28 | AWS Pricing Calculator | `20.1_aws_pricing_calculator.png` | `cost/cost-estimation.md` |
+| 4 | IAM users — current final list showing DevOpsAdmin and CloudIntern | `02.2_iam_users.png` | `docs/iam-configuration.md` |
+| 5 | IAM user MFA evidence | `03.1_iam_user_mfa.png` | `docs/iam-configuration.md` |
+| 6 | CloudIntern MFA assignment | `03.2_cloudintern_mfa.png` | `docs/iam-configuration.md` |
+| 7 | IAM Roles | `03.3_iam_roles.png` | `docs/iam-configuration.md` |
+| 8 | CloudIntern create-user details | `03.4_cloudintern_create_user_details.png` | `docs/iam-configuration.md` |
+| 9 | CloudIntern permissions/group step | `03.5_cloudintern_permissions_group.png` | `docs/iam-configuration.md` |
+| 10 | CloudIntern review and create | `03.6_cloudintern_review_and_create.png` | `docs/iam-configuration.md` |
+| 11 | CloudIntern created successfully + users list | `03.7_cloudintern_created_successfully_and_users.png` | `docs/iam-configuration.md` |
+| 12 | VPC | `04.1_vpc.png` | `docs/vpc-networking.md` |
+| 13 | Public subnet | `05.1_public_subnet.png` | `docs/vpc-networking.md` |
+| 14 | Private subnet | `05.2_private_subnet.png` | `docs/vpc-networking.md` |
+| 15 | Private subnet route table | `05.2_private_subnet_route_table.png` | `docs/vpc-networking.md` |
+| 16 | Internet Gateway | `06.1_internet_gateway.png` | `docs/vpc-networking.md` |
+| 17 | Public route table | `07.1_route_table.png` | `docs/vpc-networking.md` |
+| 18 | Security Group | `08.1_security_group.png` | `docs/security-groups.md` |
+| 19 | EC2 launch configuration | `09.1_ec2_launch_configuration.png` | `docs/ec2-deployment.md` |
+| 20 | EC2 instance configuration | `09.2_ec2_instance_configuration.png` | `docs/ec2-deployment.md` |
+| 21 | SSH connection | `10.1_ssh_connection.png` | `docs/ec2-deployment.md` |
+| 22 | Nginx default page | `11.1_nginx_default_page.png` | `docs/nginx-deployment.md` |
+| 23 | Nginx browser verification | `12.1_nginx_browser.png` | `docs/nginx-deployment.md` |
+| 24 | Custom Nginx webpage | `13.1_custom_nginx_page.png` | `docs/nginx-deployment.md` |
+| 25 | S3 bucket and versioning | `14.1_s3_bucket_and_versioning.png` | `docs/s3-storage.md` |
+| 26 | S3 object upload | `16.1_s3_object_upload.png` | `docs/s3-storage.md` |
+| 27 | S3 uploaded object | `16.2_s3_object_uploaded.png` | `docs/s3-storage.md` |
+| 28 | CloudWatch dashboard | `17.1_cloudwatch_dashboard.png` | `docs/cloudwatch-monitoring.md` |
+| 29 | CloudWatch alarm configuration | `18.1_cloudwatch_alarm_configuration.png` | `docs/cloudwatch-monitoring.md` |
+| 30 | CloudWatch alarm created | `18.2_cloudwatch_alarm_created.png` | `docs/cloudwatch-monitoring.md` |
+| 31 | AWS Architecture Diagram | `19.1_aws_architecture_diagram.png` | `diagrams/01_aws_cloud_architecture.md` |
+| 32 | AWS Pricing Calculator | `20.1_aws_pricing_calculator.png` | `cost/cost-estimation.md` |
 
-> The AWS Console login screenshot for CloudIntern is intentionally not included because a separate console-login screenshot for each IAM user is not required by the internship deliverables.
+> A separate console-login screenshot for each IAM user is not required by the internship deliverables, so the console-home login screenshot was not added to the evidence set.
 
 ---
 
@@ -56,7 +60,7 @@ The IAM implementation includes:
 - MFA evidence for IAM users
 - Root account MFA
 
-The CloudIntern MFA screenshot confirms that an MFA device was assigned.
+The CloudIntern creation screenshots explicitly show the username, permissions/review flow, and successful creation. The CloudIntern MFA screenshot confirms that an MFA device was assigned.
 
 **IAM Roles:** `03.3_iam_roles.png` shows the IAM Roles page and the `EC2-S3-Access` role trusted by EC2.
 
@@ -110,6 +114,8 @@ Estimated monthly cost documented: **USD 15.84**.
 
 - [x] Root MFA evidence
 - [x] IAM users evidence
+- [x] CloudIntern creation workflow evidence
+- [x] CloudIntern successful creation evidence
 - [x] IAM group evidence/documentation
 - [x] IAM user MFA evidence
 - [x] IAM Roles page evidence
